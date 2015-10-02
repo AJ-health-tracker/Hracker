@@ -13,11 +13,11 @@
   <tbody>
     <% @exercises.each do |exercise| %>
       <tr>
-        <td><%= exercises.exercise_performed %></td>
-        <td><%= exercises.calories_burned %></td>
-        <td><%= link_to 'Show', weight %></td>
-        <td><%= link_to 'Edit', edit_weight_path(weight) %></td>
-        <td><%= link_to 'Destroy', exercises, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= :exercise_performed %></td>
+        <td><%= :calories_burned %></td>
+        <td><%= link_to 'Show', exercise %></td>
+        <td><%= link_to 'Edit', edit_exercise_path(exercise) %></td>
+        <td><%= link_to 'Destroy', :exercises, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
