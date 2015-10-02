@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-    root 'dashboards#index'
-
+  root 'dashboards#index'
 
   get 'exercises/index'
   get 'exercises/show'
