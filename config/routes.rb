@@ -1,16 +1,15 @@
 Rails.application.routes.draw do
 
   get 'exercises/index'
-
   get 'exercises/show'
 
   get 'dashboards/index'
-
   get 'dashboards/show'
 
   resources :calorie_intake
   resources :weights
   resources :steps
+
   root 'dashboards#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

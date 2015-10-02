@@ -1,6 +1,6 @@
 class CalorieIntakeController < ApplicationController
   #manually-created controller
-  before_action :set_step, only: [:show, :edit, :update, :destroy]
+  before_action :set_calorie_intake, only: [:show, :edit, :update, :destroy]
 
   def index
     @calorie_intake = CalorieIntake.all
