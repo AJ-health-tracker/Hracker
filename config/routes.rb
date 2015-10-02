@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'dashboards/index'
   get 'dashboards/show'
 
-  resources :calorie_intake
+  resources :calorie_intakes
   resources :weights
   resources :steps
 

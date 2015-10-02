@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CalorieIntakeControllerTest < ActionController::TestCase
+class CalorieIntakesControllerTest < ActionController::TestCase
   # test "the truth" do
   #   assert true
   # end

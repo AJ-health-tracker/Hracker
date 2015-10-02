@@ -1,4 +1,4 @@
-class CalorieIntakeController < ApplicationController
+class CalorieIntakesController < ApplicationController
   #manually-created controller
   before_action :set_calorie_intake, only: [:show, :edit, :update, :destroy]
 
