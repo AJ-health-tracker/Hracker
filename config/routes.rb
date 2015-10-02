@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
 
-  get 'exercises/index'
+  #get 'exercises/index'
 
-  get 'exercises/show'
+  #get 'exercises/show'
 
   get 'dashboards/index'
 
   get 'dashboards/show'
 
+  #get 'exercises/new'
+  resources :exercises
   resources :weights
   resources :steps
   root 'dashboards#index'
