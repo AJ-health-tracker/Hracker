@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>calories consumed:</strong>
+  <%= @calorie_intake.calorie_intake %>
+<p>
+
+  <%= link_to 'Edit', edit_calorie_intake_path(@calorie_intake) %> |
+  <%= link_to 'Back', dashboards_index_path %>
