@@ -1,0 +1,2 @@
+class CalorieIntakeController < ApplicationController
+end
