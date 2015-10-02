@@ -5,7 +5,7 @@ class Exercise < ActiveRecord::Base
   end
 
   def calories_burned
-
+    
   end
 
 end
