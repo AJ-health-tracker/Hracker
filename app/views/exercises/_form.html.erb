@@ -19,6 +19,11 @@
     <%= f.label :calories_burned %><br>
     <%= f.number_field :calories_burned %>
   </div>
+  <div class="field">
+    <%= f.label :exercise_types %><br>
+    <%= f.collection_select :exercise_type_id, ExerciseType.all, :id, :name %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
