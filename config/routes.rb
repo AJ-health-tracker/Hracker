@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'exercises/index'
+
+  get 'exercises/show'
+
   get 'dashboards/index'
 
   get 'dashboards/show'
