@@ -1,7 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  weight: MyString
+  weight: 345
+  created_at:  
 
 two:
   weight: MyString
