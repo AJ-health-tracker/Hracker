@@ -1,7 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Weight:</strong>
+  <strong>Weight entry for <%= @weight.created_at.strftime("%b %d, %Y") %></strong>
+  <br/>
+  <br/>
   <%= @weight.weight %>
 </p>
 

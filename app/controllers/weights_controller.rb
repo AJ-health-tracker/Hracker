@@ -19,16 +19,28 @@ class WeightsController < ApplicationController
   def edit
   end
 
-  # POST /weights
   def create
-    @weight = Weight.new(weight_params)
+    @weight = Weight.where(created_at: Time.now.beginning_of_day.utc..Time.now.end_of_day.utc).first_or_create!
+    redirect_to @weight
+    #@weight.update_attributes(weight_params)
 
-    if @weight.save
-      redirect_to @weight, notice: 'Weight was successfully created.'
-    else
-      render :new
-    end
+    # if @weight.save
+    #   redirect_to @weight, notice: 'Weight overwrote previous.'
+    # else
+    #   render :new
+    # end
   end
+
+  # POST /weights
+  # def create
+  #   @weight = Weight.new(weight_params)
+  #
+  #   if @weight.save
+  #     redirect_to @weight, notice: 'Weight was successfully created.'
+  #   else
+  #     render :new
+  #   end
+  # end
 
   # PATCH/PUT /weights/1
   def update
