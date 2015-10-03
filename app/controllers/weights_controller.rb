@@ -22,7 +22,6 @@ class WeightsController < ApplicationController
   def create
     @weight = Weight.where(created_at: Time.now.beginning_of_day.utc..Time.now.end_of_day.utc).first_or_create!
     redirect_to @weight
-
   end
     #@weight.update_attributes(weight_params)
 
@@ -31,7 +30,7 @@ class WeightsController < ApplicationController
     # else
     #   render :new
     # end
-  
+
 
   # POST /weights
   # def create
