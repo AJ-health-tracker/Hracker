@@ -1,6 +1,6 @@
 class WeightsController < ApplicationController
   before_action :set_weight, only: [:show, :edit, :update, :destroy]
-  belongs_to :exercise_types
+  #belongs_to :exercise_types
   # GET /weights
   def index
     @weights = Weight.all
