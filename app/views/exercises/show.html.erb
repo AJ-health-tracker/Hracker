@@ -1,9 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>exercises</strong>
-  <%= :calorie_intake %>
+  <strong>Exercise performed</strong>
+  <%= @exercise.exercise_performed %>
 <p>
 
-  <%= link_to 'Edit', edit_calorie_intake_path(@calorie_intake) %> |
+<p>
+  <strong>ID</strong>
+  <%= @exercise.id %>
+<p>
+
+  <p>
+    <strong>Calories burned</strong>
+    <%= @exercise.calories_burned %>
+  <p>
+
+  <%= link_to 'Edit', exercises_path %> |
   <%= link_to 'Back', dashboards_index_path %>

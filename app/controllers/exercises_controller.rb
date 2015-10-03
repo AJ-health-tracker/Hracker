@@ -6,21 +6,35 @@ class ExercisesController < ApplicationController
   end
 
   def show
-
   end
 
   def new
     @exercise = Exercise.new
   end
 
+  def edit
+  end
+
   def create
     @exercise = Exercise.new(exercise_params)
-
     if @exercise.save
       redirect_to @exercise, notice: 'Exercise was successfully created.'
     else
       render :new
     end
+  end
+
+  def update
+    if @exercise.update(exercise_params)
+      redirect_to @exercise, notice: 'Exercise was successfully created.'
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @exercise.destroy
+    redirect_to exercises_url, notice: 'Exercise was successfully destroyed.'
   end
 
   private
@@ -30,7 +44,7 @@ class ExercisesController < ApplicationController
     end
 
     def exercise_params
-      params.require(:exercise).permit(:exercise_types, :calories_burned)
+      params.require(:exercise).permit(:exercise_type_id, :calories_burned, :exercise_performed)
     end
 
 end
