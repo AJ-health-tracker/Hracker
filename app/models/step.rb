@@ -1,5 +1,5 @@
 class Step < ActiveRecord::Base
   def self.total_steps_taken
-    self.count
+    self.sum(:steps_taken)
   end
 end
