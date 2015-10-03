@@ -3,6 +3,9 @@
 
 <p>You have taken <%=@all_steps_ever%> steps over the life of this app!</p>
 
+<p>You consumed <%= @calories_eaten %> calories today!</p>
+<p>You burned <%= @calories_burned %> calories today!</p>
+<p>Your calorie budget for today is <%= @calories_eaten - @calories_burned %> calories !</p>
 
 
 <p><%= link_to 'New Step', new_step_path %></p>
