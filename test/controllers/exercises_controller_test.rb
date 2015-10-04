@@ -2,7 +2,6 @@ require 'minitest/pride'
 require 'test_helper'
 
 class ExercisesControllerTest < ActionController::TestCase
-
   setup do
     @exercise = exercises(:one)
   end

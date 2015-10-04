@@ -28,7 +28,7 @@ class CalorieIntakesController < ApplicationController
 
   def update
     if @calorie_intake.update(calorie_intake_params)
-      redirect to @calorie_intake, notice: "your calorie intake was successfully updated."
+      redirect_to @calorie_intake, notice: "your calorie intake was successfully updated."
     else
       render :edit
     end
