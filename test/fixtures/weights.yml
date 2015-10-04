@@ -2,16 +2,17 @@
 
 today:
   weight: 123
-  created_at: Time.now
+  date_created: date.today
 
 yesterday:
   weight: 234
-  created_at: Time.now - 1.day
+  date_created: date.today - 1.day
+
 
 tomorrow:
   weight: 345
-  created_at: Time.now + 1.day
+  date_created: date.today + 1.day
 
-one_minute_ago:
+later_today:
   weight: 456
-  created_at: Time.now - 1.minute
+  date_created: date.today
