@@ -5,5 +5,4 @@ class CalorieIntake < ActiveRecord::Base
        Time.now.beginning_of_day, Time.now)
     intake_today.all.sum(:calorie_intake)
   end
-
 end
