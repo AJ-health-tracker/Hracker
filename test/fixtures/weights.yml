@@ -1,8 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  weight: 345
-  created_at:  
+today:
+  weight: 123
+  created_at: Time.now
 
-two:
-  weight: MyString
+yesterday:
+  weight: 234
+  created_at: Time.now - 1.day
+
+tomorrow:
+  weight: 345
+  created_at: Time.now + 1.day
+
+one_minute_ago:
+  weight: 456
+  created_at: Time.now - 1.minute

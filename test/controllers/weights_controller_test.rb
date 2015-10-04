@@ -2,7 +2,7 @@ require 'test_helper'
 
 class WeightsControllerTest < ActionController::TestCase
   setup do
-    @weight = weights(:one)
+    @weight = weights(:today)
   end
 
   test "should get index" do
@@ -23,6 +23,14 @@ class WeightsControllerTest < ActionController::TestCase
 
     assert_redirected_to weight_path(assigns(:weight))
   end
+
+  test "should save only one weight per day" do
+    assert weights(:one_minute_ago).save
+    assert weights(:yesterday).save
+    assert_not weights(:today).save
+
+  end
+
 
   test "should show weight" do
     get :show, id: @weight
