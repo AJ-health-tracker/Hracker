@@ -1,10 +1,18 @@
+# Hracker - your personal health tracker
 
-This is the new README!
+## Description
 
-test test
+This personal health tracking program lets you keep track of important information about your health and fitness:
 
-test
+* your weight;
+* the number of steps you walk;
+* exercises you've done;
+* calories you consume; and
+* calories you burn.
 
-Deployed to Heroku. #shipit
+## Database tables
 
-Add dashboard view.
+Our database schema was setup using this chart:
+https://www.lucidchart.com/invitations/accept/69323eff-b724-478b-aecd-e687856ddf59
+
+ 
